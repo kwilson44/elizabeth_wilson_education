@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sarah Bennett – Childcare & Education Professional</title>
+<meta name="google-site-verification" content="abc123xyz" />
+<meta name="description" content="Elizabeth Wilson – babysitter, teacher and tutor serving the Rockville MD area." />
+<meta name="author" content="Elizabeth Wilson" />
+<meta property="og:title" content="Elizabeth Wilson – Childcare & Education" />
+<meta property="og:description" content="Babysitter, teacher, and tutor serving the Rockville MD area." />
+<meta property="og:image" content="https://kwilson44.github.io/elizabeth_wilson_education/preview.jpg" />
+<title>Elizabeth Wilson – Childcare & Education Professional</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -451,11 +457,86 @@
     .nav-links { gap: 1rem; }
   }
 </style>
+</style>
+<style>
+  .nav-links a.active { color: var(--accent); font-weight: 600; }
+
+  .revealable { opacity: 0; transform: translateY(12px); transition: opacity 420ms ease, transform 420ms ease; will-change: opacity, transform; }
+  .revealable.revealed { opacity: 1; transform: none; }
+
+  .cert-list {
+    max-height: 220px;
+    overflow-y: auto;
+    padding: 0.5rem;
+    background: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--border);
+  }
+  .cert-list .cert-item { padding: 0.6rem; border-bottom: 1px dashed var(--border); font-size: 0.9rem; }
+  .cert-list .cert-item:last-child { border-bottom: none; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  body {
+    animation: fadeUp 0.5s ease both;
+  }
+
+  @media print {
+    nav, .contact-bg, footer { display: none; }
+    body { background: white; color: black; font-size: 12pt; }
+    .hero { grid-template-columns: 1fr; padding: 1rem 0; }
+    .hero-visual { display: none; }
+    .services-bg { background: white; border: none; }
+    .service-card, .review-card, .cred-item {
+      border: 0.5px solid #ccc;
+      break-inside: avoid;
+    }
+    .section { padding: 1.5rem 0; }
+    a { color: black; text-decoration: none; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Ellie Wilson – Childcare & Education",
+  "description": "Babysitter, teacher, and private tutor serving the Rockville MD area.",
+  "url": "https://kwilson44.github.io/website",
+  "telephone": "+1-301-555-0000",
+  "email": "ellie@email.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Rockville",
+    "addressRegion": "MD",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 39.0840,
+    "longitude": -77.1528
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.0840,
+      "longitude": -77.1528
+    },
+    "geoRadius": "25000"
+  },
+  "priceRange": "$$",
+  "openingHours": "Mo-Sa 08:00-20:00"
+}
+</script>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">Sarah Bennett</div>
+  <div class="nav-logo">Elizabeth Wilson, Jr.</div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -464,10 +545,10 @@
   </ul>
 </nav>
 
-<section style="border-bottom: 1px solid var(--border);">
+<section class="revealable" style="border-bottom: 1px solid var(--border);">
   <div class="hero">
     <div class="hero-content">
-      <div class="hero-badge">Available for new families</div>
+      <div class="hero-badge">Now accepting new families · Rockville, MD area</div>
       <h1>Nurturing growth, <em>one child at a time</em></h1>
       <p class="hero-desc">Experienced babysitter, classroom teacher, and private tutor dedicated to creating safe, encouraging environments where children thrive and discover their full potential.</p>
       <div class="hero-actions">
@@ -476,16 +557,16 @@
       </div>
       <div class="hero-stats">
         <div>
-          <div class="stat-num">8+</div>
+          <div class="stat-num">10+</div>
           <div class="stat-label">Years experience</div>
         </div>
         <div>
-          <div class="stat-num">120+</div>
-          <div class="stat-label">Families served</div>
+          <div class="stat-num">CPR</div>
+          <div class="stat-label">First Aid certified</div>
         </div>
         <div>
-          <div class="stat-num">5.0 ★</div>
-          <div class="stat-label">Average rating</div>
+          <div class="stat-num">MSDE</div>
+          <div class="stat-label">Certified</div>
         </div>
       </div>
     </div>
@@ -493,8 +574,8 @@
       <div class="hero-card">
         <div class="hero-card-img">👩‍🏫</div>
         <div class="hero-card-body">
-          <div class="hero-card-name">Sarah Bennett</div>
-          <div class="hero-card-title">Childcare & Education Professional · Washington DC area</div>
+          <div class="hero-card-name">Elizabeth Wilson, Jr.</div>
+          <div class="hero-card-title">Childcare & Education Professional · Rockville, MD</div>
           <div class="tag-row">
             <span class="tag green">CPR Certified</span>
             <span class="tag">B.Ed Education</span>
@@ -511,38 +592,94 @@
     <div class="about-text">
       <p class="section-label">About me</p>
       <h2 class="section-title">A trusted presence for children and families</h2>
-      <p>I'm Sarah, a passionate educator and childcare professional with over 8 years of experience working with children from ages 2 through 16. My approach blends structure with warmth — every child deserves consistency, encouragement, and a little fun along the way.</p>
-      <p>Whether I'm managing a lively after-school sitting session, leading a third-grade classroom, or helping a student unlock a difficult math concept, I bring the same dedicated energy to every interaction.</p>
-      <p>I hold a Bachelor's degree in Elementary Education, am First Aid and CPR certified, and have passed comprehensive background checks. Your family's trust is something I take seriously.</p>
+      <p>I'm Elizabeth, Co‑President of a tutoring & mentoring group I started in middle school — every student in our program earned A or B grades, and one advanced two grade levels in math within two months. My tutoring background reaches back to grades 7–8, giving me more than a decade of experience supporting learners.</p>
+      <p>I've worked at Bethesda Country Day School, captained varsity water polo (leadership & teamwork), participated in GirlsWhoCode (tech-forward tutoring), and volunteered with Ronald McDonald House. I hold First Aid/CPR certification and several MSDE trainings focused on supporting students with disabilities and classroom safety.</p>
+      <p>My approach blends structure with warmth — I prioritize social-emotional development alongside academic progress, using evidence-based practices from specialized trainings such as the University of Maryland Pyramid Model for preschool classrooms.</p>
     </div>
     <div>
       <div class="credentials">
         <div class="cred-item">
-          <div class="cred-icon">🎓</div>
+          <div class="cred-icon">🩺</div>
           <div class="cred-text">
-            <strong>B.Ed. Elementary Education</strong>
-            <span>University of Maryland, 2016</span>
+            <strong>Adult & Pediatric First Aid/CPR/AED</strong>
+            <span>American Red Cross</span>
           </div>
         </div>
         <div class="cred-item">
-          <div class="cred-icon">🏥</div>
+          <div class="cred-icon">🧾</div>
           <div class="cred-text">
-            <strong>First Aid & CPR Certified</strong>
-            <span>American Red Cross · Renewed 2024</span>
+            <strong>Basic Health & Safety Annual Update</strong>
+            <span>MSDE · completed 2024</span>
           </div>
         </div>
         <div class="cred-item">
-          <div class="cred-icon">🔍</div>
+          <div class="cred-icon">🤱</div>
           <div class="cred-text">
-            <strong>Background Checked</strong>
-            <span>State & Federal · Clean record</span>
+            <strong>Basic Health, Safety & Breastfeeding Awareness</strong>
+            <span>ChildCareEd · Jan 2025</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">📘</div>
+          <div class="cred-text">
+            <strong>3 Hour Aide Orientation (0.3 CEUs)</strong>
+            <span>ChildCareEd · June 2025</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">⚖️</div>
+          <div class="cred-text">
+            <strong>Child Sexual Abuse Awareness Training</strong>
+            <span>Abuse Prevention Systems · score 92% · June 2024</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🏊</div>
+          <div class="cred-text">
+            <strong>Camp & Ancillary Aquatics & Field Trip Safety</strong>
+            <span>Bethesda Country Day School · 2025</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🧩</div>
+          <div class="cred-text">
+            <strong>Pyramid Model Training for Preschool Classrooms (all 3 modules)</strong>
+            <span>University of Maryland School of Social Work · Oct 2024</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🧠</div>
+          <div class="cred-text">
+            <strong>Supporting Students with Disabilities: Alternate Assessment Eligibility (all 4 modules)</strong>
+            <span>MSDE · Sept 2024</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🚭</div>
+          <div class="cred-text">
+            <strong>Substance Abuse Prevention Education (Elementary)</strong>
+            <span>MSDE · Aug 2024</span>
           </div>
         </div>
         <div class="cred-item">
           <div class="cred-icon">📚</div>
           <div class="cred-text">
-            <strong>Licensed K–8 Teacher</strong>
-            <span>Maryland State Teaching Certificate</span>
+            <strong>Preventing Substance Use through Health Skill Development (Secondary)</strong>
+            <span>MSDE · Aug 2024</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🛡️</div>
+          <div class="cred-text">
+            <strong>Sexual Abuse & Assault Prevention Education (Elementary)</strong>
+            <span>MSDE · Aug 2024</span>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🔒</div>
+          <div class="cred-text">
+            <strong>Preventing Sexual Violence through Health Skill Development (Secondary)</strong>
+            <span>MSDE</span>
           </div>
         </div>
       </div>
@@ -563,25 +700,44 @@
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">🍼</div>
-        <h3>Babysitting</h3>
-        <p>Reliable, attentive care for children ages 2–12. Includes meal prep, homework help, age-appropriate activities, and bedtime routines. Available evenings, weekends, and full days.</p>
-        <div class="service-price">From $22/hour · Minimum 3 hours</div>
+        <h3>Babysitting & Childcare</h3>
+        <p>Reliable, attentive care for infants through teens. Includes meal prep, homework support, behavior management, and safe activity planning. Available evenings, weekends, and full days.</p>
+        <div class="service-price">From $25/hour · Minimum 3 hours</div>
       </div>
       <div class="service-card">
         <div class="service-icon">🏫</div>
-        <h3>Substitute Teaching</h3>
-        <p>Experienced K–8 classroom coverage with strong classroom management skills. Familiar with Common Core curriculum and differentiated instruction for diverse learning needs.</p>
-        <div class="service-price">Daily rate · Contact for availability</div>
+        <h3>Specialized Tutoring & Classroom Support</h3>
+        <p>Targeted tutoring with a strong math focus and proven results. Also available for short-term classroom coverage and differentiated instruction for diverse learners.</p>
+        <div class="service-price">Hourly or daily rates · Contact for availability</div>
       </div>
       <div class="service-card">
         <div class="service-icon">✏️</div>
-        <h3>Private Tutoring</h3>
-        <p>One-on-one academic support for grades K–10 in reading, writing, and mathematics. Sessions are structured around each student's unique learning style and curriculum goals.</p>
+        <h3>Special Needs & After-School/Camp Care</h3>
+        <p>Support for students with disabilities, supported by MSDE training. Also experienced in camp and after-school supervision with aquatics/field-trip safety certifications.</p>
         <div class="service-price">From $55/hour · In-home or virtual</div>
       </div>
     </div>
   </div>
 </div>
+
+<section class="section" id="certifications">
+  <p class="section-label">Certifications</p>
+  <h2 class="section-title">Verified training & continuing education</h2>
+  <div class="cert-list">
+    <div class="cert-item">Adult & Pediatric First Aid/CPR/AED — American Red Cross</div>
+    <div class="cert-item">Basic Health & Safety Annual Update — MSDE (2024)</div>
+    <div class="cert-item">Basic Health, Safety & Breastfeeding Awareness — ChildCareEd (Jan 2025)</div>
+    <div class="cert-item">3 Hour Aide Orientation — ChildCareEd (June 2025, 0.3 CEUs)</div>
+    <div class="cert-item">Child Sexual Abuse Awareness Training — Abuse Prevention Systems (92%, Jun 2024)</div>
+    <div class="cert-item">Camp & Ancillary Aquatics & Field Trip Safety — Bethesda Country Day School (2025)</div>
+    <div class="cert-item">Pyramid Model Training for Preschool Classrooms (all 3 modules) — UMD School of Social Work (Oct 2024)</div>
+    <div class="cert-item">Supporting Students with Disabilities: Alternate Assessment Eligibility (all 4 modules) — MSDE (Sept 2024)</div>
+    <div class="cert-item">Substance Abuse Prevention Education (Elementary) — MSDE (Aug 2024)</div>
+    <div class="cert-item">Preventing Substance Use through Health Skill Development (Secondary) — MSDE (Aug 2024)</div>
+    <div class="cert-item">Sexual Abuse & Assault Prevention Education (Elementary) — MSDE (Aug 2024)</div>
+    <div class="cert-item">Preventing Sexual Violence through Health Skill Development (Secondary) — MSDE</div>
+  </div>
+</section>
 
 <section class="section" id="reviews">
   <p class="section-label">What families say</p>
@@ -632,7 +788,7 @@
       <div class="contact-info">
         <div class="contact-row">
           <div class="contact-icon">📧</div>
-          sarah.bennett@email.com
+          ellie.wilson@email.com
         </div>
         <div class="contact-row">
           <div class="contact-icon">📍</div>
@@ -644,43 +800,101 @@
         </div>
       </div>
     </div>
-    <div class="contact-form">
+    <form id="contact-form" class="contact-form" novalidate>
+      <div data-fs-success style="display:none; padding:0.5rem 0; color: #E8F7F3; background: rgba(127,191,181,0.08); border-radius:8px; margin-bottom:1rem;">Thanks — your message has been sent. I'll reply within 24 hours.</div>
+      <div data-fs-error style="display:none; padding:0.5rem 0; color:#FFD1D1; background: rgba(255,200,200,0.04); border-radius:8px; margin-bottom:1rem;">There was a problem sending your message. Please try again.</div>
+
       <div class="form-row">
         <div class="form-group">
           <label class="form-label">First name</label>
-          <input class="form-input" type="text" placeholder="Jane" />
+          <input class="form-input" type="text" name="first_name" placeholder="Jane" data-fs-field />
+          <span data-fs-error="first_name" style="color:#FFD1D1; display:block; font-size:0.85rem; margin-top:0.35rem;"></span>
         </div>
         <div class="form-group">
           <label class="form-label">Last name</label>
-          <input class="form-input" type="text" placeholder="Smith" />
+          <input class="form-input" type="text" name="last_name" placeholder="Smith" data-fs-field />
+          <span data-fs-error="last_name" style="color:#FFD1D1; display:block; font-size:0.85rem; margin-top:0.35rem;"></span>
         </div>
       </div>
+
       <div class="form-group">
         <label class="form-label">Email address</label>
-        <input class="form-input" type="email" placeholder="jane@example.com" />
+        <input class="form-input" type="email" name="email" placeholder="jane@example.com" required data-fs-field />
+        <span data-fs-error="email" style="color:#FFD1D1; display:block; font-size:0.85rem; margin-top:0.35rem;"></span>
       </div>
+
       <div class="form-group">
         <label class="form-label">Service needed</label>
-        <select class="form-input">
+        <select class="form-input" name="service" data-fs-field>
           <option value="" disabled selected>Select a service…</option>
           <option>Babysitting</option>
           <option>Substitute Teaching</option>
           <option>Private Tutoring</option>
           <option>Other / Not sure yet</option>
         </select>
+        <span data-fs-error="service" style="color:#FFD1D1; display:block; font-size:0.85rem; margin-top:0.35rem;"></span>
       </div>
+
       <div class="form-group">
         <label class="form-label">Message</label>
-        <textarea class="form-input" placeholder="Tell me a bit about your child's age, schedule, and what you're looking for…"></textarea>
+        <textarea class="form-input" name="message" placeholder="Tell me a bit about your child's age, schedule, and what you're looking for…" data-fs-field></textarea>
+        <span data-fs-error="message" style="color:#FFD1D1; display:block; font-size:0.85rem; margin-top:0.35rem;"></span>
       </div>
-      <button class="btn-submit">Send message →</button>
-    </div>
+
+      <input type="hidden" name="_subject" value="Website inquiry: new message from site" />
+      <button class="btn-submit" type="submit" data-fs-submit-btn>Send message →</button>
+    </form>
   </div>
 </div>
 
 <footer>
-  © 2026 <span>Sarah Bennett</span> · Childcare & Education Professional · All rights reserved
+  © 2026 <span>Elizabeth Wilson</span> · Childcare & Education Professional · All rights reserved
 </footer>
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'xeedlqor' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const links = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
+    const sections = links.map(l => document.querySelector(l.hash)).filter(Boolean);
+
+    if (sections.length) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            links.forEach(a => a.classList.remove('active'));
+            const active = document.querySelector(`.nav-links a[href="#${entry.target.id}"]`);
+            if (active) active.classList.add('active');
+          }
+        });
+      }, { threshold: 0.5 });
+      sections.forEach(s => obs.observe(s));
+      links.forEach(a => a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.hash);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          history.replaceState(null, '', a.hash);
+        }
+      }));
+    }
+
+    // Reveal on scroll for sections and hero
+    const revealEls = Array.from(document.querySelectorAll('.revealable, .section'));
+    const revObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revObs.observe(el));
+  });
+</script>
 
 </body>
 </html>
