@@ -1,6 +1,6 @@
 # Elizabeth Wilson — Childcare & Education Professional
 
-**Live site:** https://kwilson44.github.io/website
+**Live site:** https://kwilson44.github.io/elizabeth_wilson_education
 
 This repository contains Elizabeth Wilson's professional single-page portfolio showcasing her experience in babysitting, tutoring, and specialized childcare education. The site is hosted on GitHub Pages and includes:
 
