@@ -3,6 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#4A7C6F" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Elizabeth Wilson" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+<link rel="manifest" href="manifest.json" />
 <meta name="google-site-verification" content="hPpoffPXCEAb8hO91iw2RHjxp2PivA5gBn99u9QbhKc" />
 <meta name="description" content="Elizabeth Wilson – babysitter, teacher and tutor serving the Potomac MD area." />
 <meta name="author" content="Elizabeth Wilson" />
@@ -941,6 +947,15 @@
     }, { threshold: 0.12 });
     revealEls.forEach(el => revObs.observe(el));
   });
+
+  // Register service worker for offline support
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(registration => console.log('SW registered:', registration.scope))
+        .catch(error => console.log('SW registration failed:', error));
+    });
+  }
 </script>
 
 </body>

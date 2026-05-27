@@ -1,0 +1,33 @@
+{
+  "name": "Elizabeth Wilson – Childcare & Education",
+  "short_name": "Elizabeth Wilson",
+  "description": "Babysitter, teacher, and private tutor serving the Rockville MD area.",
+  "start_url": "/elizabeth_wilson_education/",
+  "scope": "/elizabeth_wilson_education/",
+  "display": "standalone",
+  "theme_color": "#4A7C6F",
+  "background_color": "#FAF8F4",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "photo_one.jpg",
+      "sizes": "540x720",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    }
+  ]
+}
